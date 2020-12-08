@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <title>Weight Converter</title>
+  </head>
+  <body class="bg-gray-800">
+    <div class="container mx-auto p-10 min-h-screen text-center">
+      <i class="fas fa-weight text-7xl text-white"></i>
+      <h1 class="text-3xl text-white m-3 font-bold">Weight Converter</h1>
+      <form>
+        <input
+          class="lbsInput text-2xl p-1"
+          type="number"
+          placeholder="Input Pounds..."
+        />
+      </form>
+      <div id="output">
+        <div class="card border-2 m-3 mx-auto max-w-xs rounded bg-blue-400">
+          <h4 class="text-xl text-white mx-3 text-left">Grams:</h4>
+          <div
+            id="gramsOutput"
+            class="text-left text-white -text-lg ml-3 font-bold"
+          ></div>
+        </div>
+        <div class="card border-2 m-3 mx-auto max-w-xs rounded bg-green-500">
+          <h4 class="text-xl text-white mx-3 text-left">Kilograms:</h4>
+          <div
+            id="kilogramsOutput"
+            class="text-left text-white -text-lg ml-3 font-bold"
+          ></div>
+        </div>
+        <div class="card border-2 m-3 mx-auto max-w-xs rounded bg-yellow-400">
+          <h4 class="text-xl text-white mx-3 text-left">Ounces:</h4>
+          <div
+            id="ouncesOutput"
+            class="text-left text-white -text-lg ml-3 font-bold"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
